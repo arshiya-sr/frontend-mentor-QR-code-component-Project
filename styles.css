@@ -7,59 +7,57 @@
 body {
   background-color: hsl(212, 45%, 89%);
   display: flex;
-  flex-direction: column;      /* stack children vertically */
-  min-height: 100vh;           /* full viewport height */
+  flex-direction: column;
+  min-height: 100vh;     
   font-family: Outfit, sans-serif;
 }
 
 /* main content area (card) */
+
 main {
-  flex: 1;                     /* take all available space */
+  flex: 1;
   display: flex;
-  justify-content: center;     /* center card horizontally */
-  align-items: center;         /* center card vertically */
+  justify-content: center;
+  align-items: center;
 }
 
 /* card */
-article {
+
+.card {
   background-color: white;
   border-radius: 19px;
-  padding: 17px;
+  padding: 1.1rem;
   max-width: 265px;
   width: 90%;
   text-align: center;
   font-size: 15px;
 }
 
-img {
+.card-img {
   width: 100%;
-  border-radius: 12px;
-  margin-bottom: 8px;
+  border-radius: 0.9rem;
+  margin-bottom: 0.7rem;
 }
 
-h1, p {
-    margin: 6px 6px;
+.card-title, p {
+  margin: 0.42rem;
 }
 
-h1 {
-    font-size: 1.4em;
-    font-weight: 700;
-    color: black;
-    margin-bottom: 12px;
+.card-title, .bold {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 0.85rem;
 }
 
-strong {
-    font-weight: 700;
+.anchor, .abbrevation{
+  text-decoration: none;
 }
 
-abbr, a {
-    text-decoration: none;
-}
-
-p {
-    font-size: 1.1em;
-    color: hsl(216, 15%, 48%);
-    margin-bottom: 14px;
+.card-text {
+  font-size: 0.9rem;
+  color: hsl(216, 15%, 48%);
+  margin-bottom: 0.9rem;
 }
 
 /* footer */
@@ -77,20 +75,20 @@ p {
   color: hsl(228, 45%, 44%);
 }
 
-footer a:link {
+.attribution .anchor:link {
     color: red;
 }
 
 /* responsive */
 
-footer a:visited {
-    color: gray;
+.attribution .anchor:visited {
+  color: gray;
 }
 
-a:visited {
-    color: black;
+.anchor:visited {
+  color: black;
 }
 
-a:hover, a:active, a:focus {
-    text-decoration: dashed;
+.anchor:hover, .anchor:active, .anchor:focus {
+  text-decoration: dashed;
 }
